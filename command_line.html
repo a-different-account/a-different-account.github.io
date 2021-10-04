@@ -8,20 +8,36 @@
 <body>
 <script>
 $('body').terminal({
-    hello: function(what) {
-        this.echo('Hello, ' + what +
-                  '. Welcome to this terminal.');
-    }
-}, {
-    greetings: 'i stole this code'
-});
-    
-$('body').terminal({
-    cat: function() {
-        this.echo('you thought i would try to make a linux cat command in js? nahhh just take this cat instead');
-        this.echo($('<img src="https://placekitten.com/408/287">'));
+    echo: function (echotext) {
+        this.echo(echotext);
+    },
+    cat: function () {
+        this.echo("you thought i would implement an actual linux cat function? nah, take an ascii cat")
+        this.echo("                      _                        ");
+        this.echo("                      \`*-.                    ");
+        this.echo("                       )  _`-.                 ");
+        this.echo("                      .  : `. .                ");
+        this.echo("                      : _   '  \               ");
+        this.echo("                      ; *` _.   `*-._          ");
+        this.echo("                      `-.-'          `-.       ");
+        this.echo("                        ;       `       `.     ");
+        this.echo("                        :.       .        \    ");
+        this.echo("                        . \  .   :   .-'   .   ");
+        this.echo("                        '  `+.;  ;  '      :   ");
+        this.echo("                        :  '  |    ;       ;-. ");
+        this.echo("                        ; '   : :`-:     _.`* ;");
+        this.echo("                     .*' /  .*' ; .*`- +'  `*' ");
+        this.echo("                     `*-*   `*-*  `*-*'        ");
         
-    }
+    },
+    help: function () {
+        this.echo('\n help - displays what you\'re seeing now! \n\n clear - clears the "console" screen \n\n cat - totally, 100%, the linux cat function ported over \n\n rot13 - encode your text in rot13! \n\n echo - makes the system say whatever text you want it to. (for multiple words, surround the text you wish to echo in quotes) \n\n');
+    },
+    rot13: function () {
+        this.echo('{placeholder rot13 function}');
+    },
+}, {
+    greetings: '\n UnwelcomeDOS - I guess. \n\n This is still in very early development, though i may add actual encryption/decryption functionality for multiple ciphers. stay tuned! \n\n (run "help" for a list of commands) \n'
 });
 </script>
 </body>
