@@ -10,10 +10,18 @@
 $('body').terminal({
     hello: function(what) {
         this.echo('Hello, ' + what +
-                  '. Wellcome to this terminal.');
+                  '. Welcome to this terminal.');
     }
 }, {
     greetings: 'i stole this code'
+});
+    
+$('body').terminal({
+    cat: function() {
+        this.echo('you thought i would try to make a linux cat command in js? nahhh just take this cat instead');
+        this.echo($('<img src="https://placekitten.com/408/287">'));
+        
+    }
 });
 </script>
 </body>
