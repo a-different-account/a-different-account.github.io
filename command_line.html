@@ -31,7 +31,7 @@ $('body').terminal({
         
     },
     help: function () {
-        this.echo('[[;firebrick;]' + '\n help - displays what you\'re seeing now! \n\n clear - clears the "console" screen \n\n cat - totally, 100%, the linux cat function ported over \n\n rot13 - encode your text in rot13! \n\n echo - makes the system say whatever text you want it to. (for multiple words, surround the text you wish to echo in quotes) \n\n startup - prints the system\'s startup dialouge \n\n reload - reloads this webpage. \n');
+        this.echo('[[;firebrick;]' + '\n help - displays what you\'re seeing now! \n\n clear - clears the "console" screen \n\n cat - totally, 100%, the linux cat function ported over \n\n rot13 - encode your text in rot13! \n\n echo - makes the system say whatever text you want it to. (for multiple words, surround the text you wish to echo in quotes) \n\n startup - prints the system\'s startup dialouge \n\n reload - reloads this webpage. \n\n site_tree - displays the files of this site in, well, a tree \n');
     },
     rot13: function rot13(str) {
         var input     = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -47,6 +47,22 @@ $('body').terminal({
     reload: function () {
         this.echo('[[;firebrick;]' + 'reloading now...');
         window.location.reload(false); 
+    },
+    site_tree: function () {
+        this.echo('[[;indianred;]' + 'the-unwelcome.github.io/');
+        this.echo('[[;indianred;]' + '├─ resources/');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_encoders_and_decoders.html');
+        this.echo('[[;firebrick;]' + '│  ├─ discord_servers.html');
+        this.echo('[[;firebrick;]' + '│  ├─ index.html');
+        this.echo('[[;firebrick;]' + '│  ├─ solving_resources.html');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_cipher.html');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_decoders.html');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_encoders.html');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_server.html');
+        this.echo('[[;firebrick;]' + '│  ├─ unwelcome_version_history.html');
+        this.echo('[[;firebrick;]' + '├─ command_line.html');
+        this.echo('[[;firebrick;]' + '├─ home.html');
+        this.echo('[[;firebrick;]' + '├─ index.html');
     },
 }, {
     greetings: '[[;firebrick;]' + '\n UnwelcomeDOS - I guess. \n\n This is still in very early development, though i may add actual encryption/decryption functionality for multiple ciphers. stay tuned! \n\n (run "help" for a list of commands) \n'
