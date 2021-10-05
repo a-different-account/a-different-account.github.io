@@ -41,8 +41,12 @@ $('body').terminal({
         return str.split('').map(translate).join('');
 
     },
-    startup: function rot13() {
-        this.echo('\n UnwelcomeDOS - I guess. \n\n This is still in very early development, though i may add actual encryption/decryption functionality for multiple ciphers. stay tuned! \n\n (run "help" for a list of commands) \n')
+    startup: function () {
+        this.echo('\n UnwelcomeDOS - I guess. \n\n This is still in very early development, though i may add actual encryption/decryption functionality for multiple ciphers. stay tuned! \n\n (run "help" for a list of commands) \n');
+    },
+    reload: function () {
+        this.echo('reloading now...');
+        window.location.reload(false); 
     },
 }, {
     greetings: '\n UnwelcomeDOS - I guess. \n\n This is still in very early development, though i may add actual encryption/decryption functionality for multiple ciphers. stay tuned! \n\n (run "help" for a list of commands) \n'
