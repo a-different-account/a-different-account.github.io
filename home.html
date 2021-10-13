@@ -19,11 +19,186 @@
             color: #DC143C;
             font-size: 66px;
         }
+        
+        .string {
+            font-family: "Courier New";
+            text-align: center;
+            line-height: 1.2;
+            color: #DC143C;
+            font-size: 66px;
+        }
+        div{
+  animation: glitch 3s linear infinite;
+}
 
          .footnote {
             color: white;
             font-size: 15px;
             text-align: right;
+        }
+        @keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+        .topMenu {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: white;
+            font-size: 15px;
+        }
+
+        .Section1 {
+            background-color: #0f0e0e;
+        }
+
+        .Section1_h1 {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: white
+        }
+
+        .HYPERLINK {
+            color: white;
+    font-family: roboto;
+        }
+        a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+        
+        .ligma {
+            text-align: center;
+            font-family:"Lucida Console", "Courier New", monospace;
+            color: Aqua;
+            font-size: 18;
+          
+        }
+        
+
+
+
+
+    
+        .function {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: indianred;
+            font-size: 20px;
+        }
+
+        .aboutMe {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: DarkRed;
+            font-size: 18px;
+        }
+
+        .typebox {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            transition: width 0.4s ease-in-out;
+            box-sizing: border-box;
+        }
+
+            .typebox:focus {
+                width: 100%;
+            }
+
+        .sendButton {
+            padding: 10px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            background-color: red;
+            border-radius: 20px;
+            border-color: red;
+        }
+
+        form {
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: white;
         }
 </style>
 
@@ -37,7 +212,7 @@
 
 <body>
 <br />
-<h1 class="title"> Unwelcome</h1>
+<div><h1 class="string" class="fade-in-image"> Unwelcome</h1></div>
 <h2 class="mainTEXT"><span style="color: gray">- </span>A site for resources to <span style="color: cyan">solve puzzles</span> and <br /><span style="color: cyan">crack codes</span>. We use these resources to solve <br /><span style="color: cyan">ARGs</span> and <span style="color: cyan">cicada 3301</span>-like puzzles.
 <br /><br />
 <h2 class="mainTEXT"><span style="color: gray">- </span><a href="https://the-unwelcome.github.io/resources/" style="color: indianred">/resources</a></h2>
