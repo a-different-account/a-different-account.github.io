@@ -213,12 +213,30 @@ div:after{
 <body>
 <br />
 <div><h1 class="string" class="fade-in-image"> Unwelcome</h1></div>
-<h2 class="mainTEXT"><span style="color: gray">- </span>A site for resources to <span style="color: cyan">solve puzzles</span> and <br /><span style="color: cyan">crack codes</span>. We use these resources to solve <br /><span style="color: cyan">ARGs</span> and <span style="color: cyan">cicada 3301</span>-like puzzles.
+<h2 class="mainTEXT"><span style="color: gray">- </span>A site for resources to <span id="myButton" style="color: cyan">solve puzzles</span> and <br /><span id="wellThen" style="color: cyan">crack codes</span>. We use these resources to solve <br /><span id="argame" style="color: cyan">ARGs</span> and <span id="cicada" style="color: cyan">Cicada 3301</span>-like puzzles.
 <br /><br />
 <h2 class="mainTEXT"><span style="color: gray">- </span><a href="https://the-unwelcome.github.io/resources/" style="color: indianred; text-decoration: underline;">/resources</a></h2>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <h1 class="footnote">
 <a class="upper">(site is under active development)</a>
 </h1>        
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy('#myButton', {
+        content: 'The majority of these puzzles are cryptography-based, generally with rewards such as a certain cryptographic coin.',
+      });
+      tippy('#wellThen', {
+        content: '\'Codes\' referring to encrypted data.',
+      });
+      tippy('#argame', {
+        content: 'An \'ARG\' is an alternate reality game; a book in which the story is forwarded by cracking codes and direct character interaction.',
+      });
+      tippy('#cicada', {
+        content: 'Cicada 3301 is a famous internet puzzle with tons of encrypted data that had to be cracked to move into the next stages.',
+      });
+    </script>
 </body>
 </html>
