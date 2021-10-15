@@ -2,6 +2,41 @@
 <html>
 <body style="background-color:#1c1c1c;">
 <style>
+        .rounded {
+        border-radius: 25px;
+        font-family: "Lucida Console", "Courier New", monospace;
+        }
+        .flex-parent {
+  display: flex;
+}
+
+        .jc-center {
+  justify-content: center;
+}
+        .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align: center;
+}
+        .button3 {
+  background-color: indianred; 
+  color: black; 
+  border: 2px solid #f44336;
+  text-align: center;
+}
+        .button3:hover {
+  background-color: #f44336;
+  color: white;
+}
         .HYPERLINK {
             color: Cyan;
         }
@@ -27,7 +62,7 @@
             color: #DC143C;
             font-size: 66px;
         }
-        div{
+        h1{
   animation: glitch 3s linear infinite;
 }
 
@@ -215,7 +250,9 @@ div:after{
 <div><h1 class="string" class="fade-in-image"> Unwelcome</h1></div>
 <h2 class="mainTEXT"><span style="color: gray">- </span>A site for resources to <span id="myButton" style="color: cyan">solve puzzles</span> and <br /><span id="wellThen" style="color: cyan">crack codes</span>. We use these resources to solve <br /><span id="argame" style="color: cyan">ARGs</span> and <span id="cicada" style="color: cyan">Cicada 3301</span>-like puzzles.
 <br /><br />
-<h2 class="mainTEXT"><span style="color: gray">- </span><a href="https://the-unwelcome.github.io/resources/" style="color: indianred; text-decoration: underline;">/resources</a></h2>
+    <div class="flex-parent jc-center">
+    <button onclick="location.href = 'https://the-unwelcome.com/resources/';" class="button button3 rounded" >RESOURCES</button>
+    </div>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <h1 class="footnote">
 <a class="upper">(site is under active development)</a>
