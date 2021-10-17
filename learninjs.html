@@ -18,6 +18,14 @@ let n = num.toString();
     else if (text == "do math") {
     document.getElementById('ez').innerHTML = "one plus one is " + num;
 }
+    else if (text == "light") { 
+    document.body.style.background = "#f3f3f3"; 
+    document.getElementById('input1').value = "yukcy light mode 🤢";
+}
+    else if (text == "dark") {
+    document.body.style.background = "#333333";
+    document.getElementById('input1').value = "omg dark mode";
+}
     else {
     document.getElementById('ez').innerHTML = text + " moment";
   }
