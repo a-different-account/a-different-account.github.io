@@ -1,0 +1,21 @@
+<html>
+<body>
+<input type="text" id="input1" />
+<button onclick="myJsFunction()">eafsadfsd</button>
+<p id="ez"></p>
+<script type="text/javascript">
+ function myJsFunction(){
+    var text=document.getElementById('input1').value;
+    if (text == "ez") {
+    document.getElementById('ez').innerHTML = "that was ez :flush:";
+}
+    else if (text == "") {
+    document.getElementById('ez').innerHTML = "WTF BLANK TEXTBOX!11!1!";
+}
+    else {
+    document.getElementById('ez').innerHTML = text + " moment";
+  }
+ }
+</script>
+</body>
+</html>
