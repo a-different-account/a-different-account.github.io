@@ -4,13 +4,19 @@
 <button onclick="myJsFunction()">eafsadfsd</button>
 <p id="ez"></p>
 <script type="text/javascript">
+let num = 1 + 1;
+let n = num.toString();
  function myJsFunction(){
     var text=document.getElementById('input1').value;
+    document.getElementById('input1').value = "";
     if (text == "ez") {
     document.getElementById('ez').innerHTML = "that was ez :flush:";
 }
     else if (text == "") {
     document.getElementById('ez').innerHTML = "WTF BLANK TEXTBOX!11!1!";
+}
+    else if (text == "do math") {
+    document.getElementById('ez').innerHTML = "one plus one is " + num;
 }
     else {
     document.getElementById('ez').innerHTML = text + " moment";
